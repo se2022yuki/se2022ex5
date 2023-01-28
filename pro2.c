@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 int main(void){
-    char word;
-    word = 'hello';
-    printf("%c", word);
+    char str[] = "hello";
+    printf("%s", str);
     return 0;
 }
