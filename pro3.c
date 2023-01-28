@@ -1,11 +1,12 @@
 #include <stdio.h>
-#include <string.h>
 
 int main(void){
-    size_t len;
-    char str[] = "hello";
+   int count = 0;
+   char str[] = "hello";
 
-    len = strlen(str);
-    printf("%s,%d", str, len);
-    return 0;
+   for(int i = 0; str[i]!=NULL; i++){
+    count++;
+   }
+   printf("%s,%d", str, count);
+   return 0;
 }
